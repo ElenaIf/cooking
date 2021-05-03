@@ -1,0 +1,40 @@
+{
+	"recipes": [
+		{
+			"id": 1,
+			"name": "Pancakes",
+			"photo": "photo1.jpg",
+			"instructions": "Bla bla bla",
+			"ingredients": [
+				{
+					"id": 1,
+					"name": "Milk",
+					"amount": "50 ml"
+				},
+				{
+					"id": 2,
+					"name": "Flour",
+					"amount": "300 g"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Soup",
+			"photo": "photo2.jpg",
+			"instructions": "Bla1 bla1 bla1",
+			"ingredients": [
+				{
+					"id": 1,
+					"name": "Meat",
+					"amount": "50 g"
+				},
+				{
+					"id": 2,
+					"name": "Potatoes",
+					"amount": "200 g"
+				}
+			]
+		}
+	]
+}

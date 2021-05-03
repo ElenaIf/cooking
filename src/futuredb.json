@@ -1,0 +1,42 @@
+{
+	"recipes": [
+		{
+			"id": 1,
+			"name": "Chicken pasta",
+			"difficulty": "easy",
+			"cookingTime": "1 hour",
+			"instructions": "Boiled chicken",
+			"comment": "Some comment",
+			"photo": "photoOfRecipe.jpg",
+			"price": "10 euro",
+			"ingredients": [
+				{
+					"id": 1,
+					"name": "chicken",
+					"servingSizeOptions": [
+						{
+							"id": 1,
+							"name": "gramm",
+							"howManyGrams": 1
+						},
+						{
+							"id": 2,
+							"name": "piece",
+							"howManyGrams": 150
+						}
+					],
+					"defaultSizeGrams": 300,
+					"photo": "photoOfIngridient.jpg",
+					"nutrition100grams": [
+						{
+							"kcal": 350,
+							"protein": 10,
+							"fat": 5,
+							"carbs": 2
+						}
+					]
+				}
+			]
+		}
+	]
+}
