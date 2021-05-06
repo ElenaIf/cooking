@@ -1,46 +1,32 @@
-import React, { Component, useState } from "react";
+import React from "react";
+import RecipeCard from "../components/RecipeCard";
 
-// import RecipeCard from "../components/RecipeCard";
+import { Switch, Route, useRouteMatch, Link } from "react-router-dom";
+import RecipeSingle from "../pages/RecipeSingle";
 
-class Recipes extends Component {
-	state = {
-		recipes: [],
-		inputData: {
-			name: "",
-			photo: "",
-			instructions: "",
-		},
-	};
-
-	componentDidMount() {
-		fetch("http://localhost:3001/recipes")
-			.then((resp) => resp.json())
-			.then((data) => this.setState({ recipes: data }));
-	}
-
-	render() {
-		return (
-			<div>
-				<section className="test">
-					<h1>Recipes!</h1>
-					<div>
-						{this.state.recipes.map((recipe) => {
-							return (
-								<div key={recipe.id}>
-									<p>{recipe.name}</p>
-									<ul>
-										{recipe.ingredients.map((ingredient) => {
-											return <li key={ingredient.id}>{ingredient.name}</li>;
-										})}
-									</ul>
-								</div>
-							);
-						})}
-					</div>
+const Recipes = ({ recipes }) => {
+	let { url } = useRouteMatch();
+	return (
+		<Switch>
+			<Route path={url} exact>
+				<section>
+					{recipes.map((recipe) => (
+						<RecipeCard
+							name={recipe.name}
+							photo={recipe.photo}
+							instructions={recipe.instructions}
+							ingredients={recipe.ingredients}
+							link={recipe.id}
+							key={recipe.id}
+						/>
+					))}
 				</section>
-			</div>
-		);
-	}
-}
+			</Route>
+			<Route path={`${url}/:id`}>
+				<RecipeSingle />
+			</Route>
+		</Switch>
+	);
+};
 
 export default Recipes;
