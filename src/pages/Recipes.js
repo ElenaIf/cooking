@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import RecipeCard from "../components/RecipeCard";
 
 import { Switch, Route, useRouteMatch, Link } from "react-router-dom";
 import RecipeSingle from "../pages/RecipeSingle";
 
+import SearchBox from "../components/SearchBox";
+
 const Recipes = ({ recipes }) => {
 	let { url } = useRouteMatch();
+	const [search, setSearch] = useState("");
+
+	const searchValueHandler = (searchEvent) => {
+		setSearch(searchEvent.target.value);
+	};
+
+	const recipeFilter = recipes.filter((recipe) => {
+		return recipe.name.toLocaleLowerCase().includes(search.toLocaleLowerCase());
+	});
+
 	return (
 		<Switch>
 			<Route path={url} exact>
 				<section>
-					{recipes.map((recipe) => (
+					<SearchBox search={searchValueHandler} />
+
+					{recipeFilter.map((recipe) => (
 						<RecipeCard
 							name={recipe.name}
 							photo={recipe.photo}
