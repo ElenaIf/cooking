@@ -4,6 +4,8 @@ import RecipeCard from "../components/RecipeCard";
 import { Switch, Route, useRouteMatch, Link } from "react-router-dom";
 import RecipeSingle from "../pages/RecipeSingle";
 
+import Container from "react-bootstrap/Container";
+
 import SearchBox from "../components/SearchBox";
 
 const Recipes = ({ recipes }) => {
@@ -22,18 +24,20 @@ const Recipes = ({ recipes }) => {
 		<Switch>
 			<Route path={url} exact>
 				<SearchBox search={searchValueHandler} />
-				<section className="recipesList">
-					{recipeFilter.map((recipe) => (
-						<RecipeCard
-							name={recipe.name}
-							photo={recipe.photo}
-							instructions={recipe.instructions}
-							ingredients={recipe.ingredients}
-							link={recipe.id}
-							key={recipe.id}
-						/>
-					))}
-				</section>
+				<Container fluid>
+					<section className="recipesList">
+						{recipeFilter.map((recipe) => (
+							<RecipeCard
+								name={recipe.name}
+								photo={recipe.photo}
+								instructions={recipe.instructions}
+								ingredients={recipe.ingredients}
+								link={recipe.id}
+								key={recipe.id}
+							/>
+						))}
+					</section>
+				</Container>
 			</Route>
 			<Route path={`${url}/:id`}>
 				<RecipeSingle />

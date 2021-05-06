@@ -23,6 +23,7 @@ footer {
 }
 
 .recipesList {
+	width: 100vw;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 1rem;
