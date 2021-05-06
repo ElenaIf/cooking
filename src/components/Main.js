@@ -14,22 +14,6 @@ const Main = () => {
 		axios.get("http://localhost:3001/recipes").then((res) => setRecipes(res.data));
 	}, []);
 
-	const inputHandler = (input_value) => {
-		this.setState({
-			inputData: { ...this.state.inputData, [input_value.target.name]: input_value.target.value },
-		});
-	};
-
-	const sendDataHandler = () => {
-		const requestOptions = {
-			method: "POST",
-			headers: { "content-type": "application/json" },
-			body: JSON.stringify(this.state.inputData),
-		};
-		fetch("http://localhost:3001/notes", requestOptions);
-		alert("Note is posted", window.location.reload());
-	};
-
 	return (
 		<main>
 			<Switch>
@@ -37,7 +21,7 @@ const Main = () => {
 					<About />
 				</Route>
 				<Route path="/new">
-					<Form inputHandler={inputHandler} submit={sendDataHandler} />
+					<Form />
 				</Route>
 				<Route exact path="/">
 					<Home />
