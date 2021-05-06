@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import RecipeCard from "../components/RecipeCard";
 
-import { Switch, Route, useRouteMatch, Link } from "react-router-dom";
+import { Switch, Route, useRouteMatch } from "react-router-dom";
 import RecipeSingle from "../pages/RecipeSingle";
 
 import Container from "react-bootstrap/Container";
