@@ -1,11 +1,13 @@
 import axios from "axios";
 import React, { useState } from "react";
+import RecipeCard from "../components/RecipeCard";
+import RecipeAdded from "../pages/RecipeAdded";
 
 const options = [
 	{
 		id: 1,
-		label: "Difficulty level",
-		value: "",
+		label: "Choose Difficulty level",
+		value: "Medium",
 	},
 	{
 		id: 2,
@@ -32,6 +34,8 @@ const Form = () => {
 		ingredients: [],
 	});
 
+	const [thankYou, setThankYou] = useState(false);
+
 	const [ingredients, setIngredients] = useState([{ id: 1, name: "", amount: "" }]);
 
 	const changeData = (e) => {
@@ -53,62 +57,67 @@ const Form = () => {
 	};
 
 	const submitData = (e) => {
+		e.preventDefault();
 		axios.post("http://localhost:3001/recipes", data);
+		setThankYou(true);
 	};
 
 	return (
-		<form onSubmit={submitData}>
-			<div>
-				<h3>Add a new recipe</h3>
-				<input type="text" name="name" id="name" placeholder="Name" onChange={changeData} />
+		<>
+			{thankYou === true && <RecipeAdded />}
+			<form onSubmit={submitData}>
+				<div>
+					<h3>Add a new recipe</h3>
+					<input type="text" name="name" id="name" placeholder="Name" onChange={changeData} />
 
-				<input
-					type="tel"
-					name="photo"
-					id="photo"
-					placeholder="Link to photo"
-					onChange={changeData}
-				/>
+					<input
+						type="tel"
+						name="photo"
+						id="photo"
+						placeholder="Link to photo"
+						onChange={changeData}
+					/>
 
-				<select name="difficulty" id="difficulty" onChange={changeData}>
-					{options.map((option) => (
-						<option value={option.value} key={option.id}>
-							{option.label}
-						</option>
-					))}
-				</select>
+					<select name="difficulty" id="difficulty" onChange={changeData}>
+						{options.map((option) => (
+							<option value={option.value} key={option.id}>
+								{option.label}
+							</option>
+						))}
+					</select>
 
-				{ingredients.map((_, i) => {
-					return (
-						<div key={i}>
-							<input
-								type="text"
-								name="amount"
-								placeholder="Amount"
-								onChange={(e) => changeIngredients(e, i)}
-							/>
-							<input
-								type="text"
-								name="name"
-								placeholder="Ingredient Name"
-								onChange={(e) => changeIngredients(e, i)}
-							/>
-						</div>
-					);
-				})}
-				<button onClick={addMore}>Add more</button>
-				<textarea
-					name="instructions"
-					id="instructions"
-					cols="30"
-					rows="5"
-					placeholder="Instructions"
-					onChange={changeData}
-				></textarea>
+					{ingredients.map((_, i) => {
+						return (
+							<div key={i}>
+								<input
+									type="text"
+									name="amount"
+									placeholder="Amount"
+									onChange={(e) => changeIngredients(e, i)}
+								/>
+								<input
+									type="text"
+									name="name"
+									placeholder="Ingredient Name"
+									onChange={(e) => changeIngredients(e, i)}
+								/>
+							</div>
+						);
+					})}
+					<button onClick={addMore}>Add more</button>
+					<textarea
+						name="instructions"
+						id="instructions"
+						cols="30"
+						rows="5"
+						placeholder="Instructions"
+						onChange={changeData}
+					></textarea>
 
-				<button type="submit">Send</button>
-			</div>
-		</form>
+					<button type="submit">Send</button>
+				</div>
+			</form>
+		</>
 	);
 };
 

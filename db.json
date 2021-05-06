@@ -55,6 +55,108 @@
         }
       ],
       "id": 3
+    },
+    {
+      "name": "Borsh",
+      "photo": "##",
+      "instructions": "Step 1 ster 2 step 3",
+      "ingredients": [
+        {
+          "id": 1,
+          "name": "water",
+          "amount": "344"
+        },
+        {
+          "id": 2,
+          "name": "beetroot",
+          "amount": "677"
+        }
+      ],
+      "difficulty": "Hard",
+      "id": 4
+    },
+    {
+      "name": "dvdv",
+      "photo": "#",
+      "instructions": "egegr erg ewg ew ",
+      "ingredients": [
+        {
+          "id": 1,
+          "name": "kfkfjf",
+          "amount": "3434"
+        },
+        {
+          "id": 2,
+          "name": "ergerg",
+          "amount": "45345"
+        }
+      ],
+      "difficulty": "Easy",
+      "id": 5
+    },
+    {
+      "name": "dvdv",
+      "photo": "#",
+      "instructions": "egegr erg ewg ew ",
+      "ingredients": [
+        {
+          "id": 1,
+          "name": "kfkfjf",
+          "amount": "3434"
+        },
+        {
+          "id": 2,
+          "name": "ergerg",
+          "amount": "45345"
+        }
+      ],
+      "difficulty": "Easy",
+      "id": 6
+    },
+    {
+      "name": "dvdv",
+      "photo": "#",
+      "instructions": "egegr erg ewg ew ",
+      "ingredients": [
+        {
+          "id": 1,
+          "name": "kfkfjf",
+          "amount": "3434"
+        },
+        {
+          "id": 2,
+          "name": "ergerg",
+          "amount": "45345"
+        }
+      ],
+      "difficulty": "Easy",
+      "id": 7
+    },
+    {
+      "name": "dvdv",
+      "photo": "#",
+      "instructions": "egegr erg ewg ew ",
+      "ingredients": [
+        {
+          "id": 1,
+          "name": "kfkfjf",
+          "amount": "3434"
+        },
+        {
+          "id": 2,
+          "name": "ergerg",
+          "amount": "45345"
+        }
+      ],
+      "difficulty": "Easy",
+      "id": 8
+    },
+    {
+      "name": "",
+      "photo": "",
+      "instructions": "",
+      "ingredients": [],
+      "id": 9
     }
   ]
 }
