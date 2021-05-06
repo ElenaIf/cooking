@@ -25,11 +25,7 @@ function App() {
 				</Row>
 
 				<Row>
-					<Col></Col>
-					<Col md="auto">
-						<Footer />
-					</Col>
-					<Col></Col>
+					<Footer />
 				</Row>
 			</Container>
 		</Router>

@@ -21,9 +21,8 @@ const Recipes = ({ recipes }) => {
 	return (
 		<Switch>
 			<Route path={url} exact>
-				<section>
-					<SearchBox search={searchValueHandler} />
-
+				<SearchBox search={searchValueHandler} />
+				<section className="recipesList">
 					{recipeFilter.map((recipe) => (
 						<RecipeCard
 							name={recipe.name}

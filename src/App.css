@@ -1,30 +1,38 @@
-/* .container {
-	width: 100vw;
-	background-color: antiquewhite;
+body {
+	display: flex;
+	flex-direction: column;
 }
 
 header {
-	height: 100px;
-	background-color: darksalmon;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0.5rem;
+	min-height: 10vh;
 }
 
 main {
-	padding: 0.5rem;
-}
-
-nav ul li {
-	display: inline-block;
-	margin: 0 1rem;
+	min-height: 80vh;
 }
 
 footer {
-	min-height: 150px;
-	background-color: burlywood;
+	background-color: #8f8a8a;
+	color: white;
+	min-height: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-} */
+	position: relative;
+	width: 100%;
+}
+
+.recipesList {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem;
+}
+
+.recipeCard {
+	margin: 1rem;
+}
+
+img {
+	height: 200px;
+	object-fit: cover;
+}
