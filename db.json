@@ -1,162 +1,79 @@
 {
-  "recipes": [
-    {
-      "id": 1,
-      "name": "Pancakes",
-      "photo": "https://images.unsplash.com/photo-1618839851913-052118691168?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      "instructions": "Bla bla bla",
-      "difficulty": "Easy",
-      "ingredients": [
-        {
-          "id": 1,
-          "name": "Milk",
-          "amount": "50 ml"
-        },
-        {
-          "id": 2,
-          "name": "Flour",
-          "amount": "300 g"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Soup",
-      "photo": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
-      "instructions": "Bla1 bla1 bla1",
-      "difficulty": "Hard",
-      "ingredients": [
-        {
-          "id": 1,
-          "name": "Meat",
-          "amount": "50 g"
-        },
-        {
-          "id": 2,
-          "name": "Potatoes",
-          "amount": "200 g"
-        }
-      ]
-    },
-    {
-      "name": "one more",
-      "photo": "recepi",
-      "instructions": "bla bla vla instructions",
-      "ingredients": [
-        {
-          "id": 1,
-          "name": "first ingref",
-          "amount": "2"
-        },
-        {
-          "id": 2,
-          "name": "second ingred",
-          "amount": "666"
-        }
-      ],
-      "id": 3
-    },
-    {
-      "name": "Borsh",
-      "photo": "##",
-      "instructions": "Step 1 ster 2 step 3",
-      "ingredients": [
-        {
-          "id": 1,
-          "name": "water",
-          "amount": "344"
-        },
-        {
-          "id": 2,
-          "name": "beetroot",
-          "amount": "677"
-        }
-      ],
-      "difficulty": "Hard",
-      "id": 4
-    },
-    {
-      "name": "dvdv",
-      "photo": "#",
-      "instructions": "egegr erg ewg ew ",
-      "ingredients": [
-        {
-          "id": 1,
-          "name": "kfkfjf",
-          "amount": "3434"
-        },
-        {
-          "id": 2,
-          "name": "ergerg",
-          "amount": "45345"
-        }
-      ],
-      "difficulty": "Easy",
-      "id": 5
-    },
-    {
-      "name": "dvdv",
-      "photo": "#",
-      "instructions": "egegr erg ewg ew ",
-      "ingredients": [
-        {
-          "id": 1,
-          "name": "kfkfjf",
-          "amount": "3434"
-        },
-        {
-          "id": 2,
-          "name": "ergerg",
-          "amount": "45345"
-        }
-      ],
-      "difficulty": "Easy",
-      "id": 6
-    },
-    {
-      "name": "dvdv",
-      "photo": "#",
-      "instructions": "egegr erg ewg ew ",
-      "ingredients": [
-        {
-          "id": 1,
-          "name": "kfkfjf",
-          "amount": "3434"
-        },
-        {
-          "id": 2,
-          "name": "ergerg",
-          "amount": "45345"
-        }
-      ],
-      "difficulty": "Easy",
-      "id": 7
-    },
-    {
-      "name": "dvdv",
-      "photo": "#",
-      "instructions": "egegr erg ewg ew ",
-      "ingredients": [
-        {
-          "id": 1,
-          "name": "kfkfjf",
-          "amount": "3434"
-        },
-        {
-          "id": 2,
-          "name": "ergerg",
-          "amount": "45345"
-        }
-      ],
-      "difficulty": "Easy",
-      "id": 8
-    },
-    {
-      "name": "",
-      "photo": "",
-      "instructions": "",
-      "ingredients": [],
-      "id": 9
-    }
-  ]
+	"recipes": [
+		{
+			"id": 1,
+			"name": "Pancakes",
+			"photo": "https://images.unsplash.com/photo-1618839851913-052118691168?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+			"instructions": "Bla bla bla",
+			"difficulty": "Easy",
+			"ingredients": [
+				{
+					"id": 1,
+					"name": "Milk",
+					"amount": "50 ml"
+				},
+				{
+					"id": 2,
+					"name": "Flour",
+					"amount": "300 g"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Soup",
+			"photo": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+			"instructions": "Bla1 bla1 bla1",
+			"difficulty": "Hard",
+			"ingredients": [
+				{
+					"id": 1,
+					"name": "Meat",
+					"amount": "50 g"
+				},
+				{
+					"id": 2,
+					"name": "Potatoes",
+					"amount": "200 g"
+				}
+			]
+		},
+		{
+			"name": "one more",
+			"photo": "recepi",
+			"instructions": "bla bla vla instructions",
+			"ingredients": [
+				{
+					"id": 1,
+					"name": "first ingref",
+					"amount": "2"
+				},
+				{
+					"id": 2,
+					"name": "second ingred",
+					"amount": "666"
+				}
+			],
+			"id": 3
+		},
+		{
+			"name": "Borsh",
+			"photo": "##",
+			"instructions": "Step 1 ster 2 step 3",
+			"ingredients": [
+				{
+					"id": 1,
+					"name": "water",
+					"amount": "344"
+				},
+				{
+					"id": 2,
+					"name": "beetroot",
+					"amount": "677"
+				}
+			],
+			"difficulty": "Hard",
+			"id": 4
+		}
+	]
 }

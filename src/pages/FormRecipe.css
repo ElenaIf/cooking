@@ -1,0 +1,24 @@
+#recipeForm {
+	margin: 2rem;
+}
+
+.formInput {
+	margin-top: 1rem;
+}
+
+#difficulty {
+	background-color: white;
+}
+
+#addMoreButton {
+	margin-top: 1rem;
+}
+
+#submitButton {
+	margin-top: 1rem;
+	width: 100%;
+}
+
+main {
+	min-height: 600px;
+}

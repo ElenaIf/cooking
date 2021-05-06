@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import About from "../pages/About";
 import Home from "../pages/Home";
 import Recipes from "../pages/Recipes";
-import Form from "../pages/Form";
+import FormRecipe from "../pages/FormRecipe";
 
 import axios from "axios";
 
@@ -21,7 +21,7 @@ const Main = () => {
 					<About />
 				</Route>
 				<Route path="/new">
-					<Form />
+					<FormRecipe />
 				</Route>
 				<Route exact path="/">
 					<Home />
