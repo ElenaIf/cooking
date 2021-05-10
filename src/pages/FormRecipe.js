@@ -148,7 +148,7 @@ const FormRecipe = () => {
 				})}
 
 				<Form.Group>
-					<Button id="addMoreButton" variant="outline-primary" onClick={addMore}>
+					<Button id="addMoreButton" variant="outline-secondary" onClick={addMore}>
 						Add more
 					</Button>
 				</Form.Group>
@@ -164,7 +164,7 @@ const FormRecipe = () => {
 					/>
 				</Form.Group>
 				<Form.Group>
-					<Button id="submitButton" type="submit" variant="primary" size="lg" block>
+					<Button id="submitButton" type="submit" variant="secondary" size="lg" block>
 						Send
 					</Button>
 				</Form.Group>

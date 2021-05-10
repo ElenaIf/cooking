@@ -5,9 +5,9 @@ class Navigation extends Component {
 	render() {
 		return (
 			<Nav>
-				<Nav.Item>
+				{/* <Nav.Item>
 					<Nav.Link href="/">Home</Nav.Link>
-				</Nav.Item>
+				</Nav.Item> */}
 				<Nav.Item>
 					<Nav.Link href="/recipes">Recipes</Nav.Link>
 				</Nav.Item>

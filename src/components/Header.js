@@ -7,7 +7,7 @@ class Header extends Component {
 		return (
 			<header>
 				<Navbar bg="light" expand="lg">
-					<Navbar.Brand href="#home">PlanCake</Navbar.Brand>
+					<Navbar.Brand href="/recipes">PlanCake</Navbar.Brand>
 					<Navigation />
 				</Navbar>
 			</header>

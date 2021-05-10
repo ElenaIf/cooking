@@ -2,6 +2,10 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 
+import Image from "react-bootstrap/Image";
+import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
+
 const RecipeSingle = () => {
 	const [recipe, setRecipe] = useState();
 	let { id } = useParams();
@@ -25,22 +29,30 @@ const RecipeSingle = () => {
 		recipeData = (
 			<article>
 				<div key={recipe.id}>
-					<img src={recipe.photo} alt={recipe.name} />
-					<h2>{recipe.name}</h2>
-					<p>{recipe.instructions}</p>
-					<ul>
-						{recipe.ingredients.map((ingredient) => {
-							return <li key={ingredient.id}>{ingredient.name}</li>;
-						})}
-					</ul>
+					<Image src={recipe.photo} alt={recipe.name} fluid className="singleRecipeImage" />
+					<Container fluid className="recipeFluidContainer">
+						<h1 className="recipeName"> {recipe.name}</h1>
+						<p>Difficulty: {recipe.difficulty}</p>
+						<div className="recipeInfo">
+							<p className="recipeInstructions">{recipe.instructions}</p>
+							<h3 className="recipeIngredients">Ingredients</h3>
+							<ul>
+								{recipe.ingredients.map((ingredient) => {
+									return <li key={ingredient.id}>{ingredient.name}</li>;
+								})}
+							</ul>
+							<Button
+								variant="outline-dark"
+								className="returnButton"
+								onClick={() => {
+									history.goBack();
+								}}
+							>
+								Back to recipes
+							</Button>
+						</div>
+					</Container>
 				</div>
-				<button
-					onClick={() => {
-						history.goBack();
-					}}
-				>
-					Back to recipes
-				</button>
 			</article>
 		);
 	}

@@ -8,7 +8,7 @@ const RecipeCard = ({ name, photo, link }) => {
 	return (
 		<article className="recipeCard" key={link}>
 			<Card style={{ width: "18rem" }}>
-				<Card.Img variant="top" src={photo} alt={name} />
+				<Card.Img variant="top" src={photo} alt={name} className="cardImage" />
 				<Card.Body>
 					<Card.Title>{name}</Card.Title>
 					<Link to={`${url}/${link}`}>Read more</Link>
