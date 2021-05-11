@@ -11,7 +11,9 @@ const Main = () => {
 	const [recipes, setRecipes] = useState([]);
 
 	useEffect(() => {
-		axios.get("http://localhost:3001/recipes").then((res) => setRecipes(res.data));
+		axios
+			.get("https://secret-shore-65901.herokuapp.com/recipes/all")
+			.then((res) => setRecipes(res.data));
 	}, []);
 
 	return (

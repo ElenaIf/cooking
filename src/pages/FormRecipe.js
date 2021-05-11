@@ -68,7 +68,7 @@ const FormRecipe = () => {
 
 	const submitData = (e) => {
 		e.preventDefault();
-		axios.post("http://localhost:3001/recipes", data);
+		axios.post("https://secret-shore-65901.herokuapp.com/recipes/add", data);
 		setThankYou(true);
 		document.getElementById("recipeForm").reset();
 	};
