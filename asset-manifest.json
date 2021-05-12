@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cooking/static/css/main.be344854.chunk.css",
-    "main.js": "/cooking/static/js/main.4a91a5e6.chunk.js",
-    "main.js.map": "/cooking/static/js/main.4a91a5e6.chunk.js.map",
+    "main.js": "/cooking/static/js/main.4d0fbdd6.chunk.js",
+    "main.js.map": "/cooking/static/js/main.4d0fbdd6.chunk.js.map",
     "runtime-main.js": "/cooking/static/js/runtime-main.1057258a.js",
     "runtime-main.js.map": "/cooking/static/js/runtime-main.1057258a.js.map",
     "static/css/2.800be05e.chunk.css": "/cooking/static/css/2.800be05e.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.800be05e.chunk.css",
     "static/js/2.74ec9c96.chunk.js",
     "static/css/main.be344854.chunk.css",
-    "static/js/main.4a91a5e6.chunk.js"
+    "static/js/main.4d0fbdd6.chunk.js"
   ]
 }
