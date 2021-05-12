@@ -18,3 +18,7 @@ This is application build with React.
 - GET and POST to database
 - Styling (your own SASS or component library)
 - Publish this project
+
+### Deployed project
+
+Can be found here: [https://elenaif.github.io/cooking](https://elenaif.github.io/cooking)
