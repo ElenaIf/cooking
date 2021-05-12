@@ -26,7 +26,7 @@ const Main = () => {
 					<FormRecipe />
 				</Route>
 				<Route exact path="/">
-					<Home />
+					<Recipes recipes={recipes} />
 				</Route>
 				<Route path="/recipes">
 					<Recipes recipes={recipes} />
