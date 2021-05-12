@@ -13,7 +13,7 @@ const RecipeSingle = () => {
 
 	useEffect(() => {
 		if (!recipe) {
-			axios.get("http://localhost:3001/recipes/" + id).then((res) => {
+			axios.get("https://secret-shore-65901.herokuapp.com/recipe/find/" + id).then((res) => {
 				setRecipe(res.data);
 			});
 		}
