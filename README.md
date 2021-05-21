@@ -21,7 +21,7 @@ This is application build with React.
 
 ### Deployed project
 
-Can be found here: [https://elenaif.github.io/cooking](https://elenaif.github.io/cooking)
+Can be found here: [https://elenaif.github.io/cooking/#/recipes](https://elenaif.github.io/cooking/#/recipes)
 
 ### Packages to install
 
