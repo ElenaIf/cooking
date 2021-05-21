@@ -22,3 +22,10 @@ This is application build with React.
 ### Deployed project
 
 Can be found here: [https://elenaif.github.io/cooking](https://elenaif.github.io/cooking)
+
+### Packages to install
+
+- react-bootstrap
+- axios
+- react-bootstrap
+- react-router-bootstrap
