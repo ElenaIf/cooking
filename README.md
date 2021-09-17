@@ -23,9 +23,12 @@ This is application build with React.
 
 Can be found here: [https://elenaif.github.io/cooking/#/recipes](https://elenaif.github.io/cooking/#/recipes)
 
+### Backend
+
+Repo with the backend is here: [https://github.com/ElenaIf/cooking_backend](https://github.com/ElenaIf/cooking_backend)
+
 ### Packages to install
 
 - react-bootstrap
 - axios
-- react-bootstrap
 - react-router-bootstrap
